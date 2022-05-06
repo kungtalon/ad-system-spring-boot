@@ -1,0 +1,6 @@
+/home/kungtalon/projects/ad-systm-spring-cloud/ad-system-spring-cloud/ad-service/ad-common/src/main/java/org/talon/ad/conf/WebConfiguration.java
+/home/kungtalon/projects/ad-systm-spring-cloud/ad-system-spring-cloud/ad-service/ad-common/src/main/java/org/talon/ad/exception/AdException.java
+/home/kungtalon/projects/ad-systm-spring-cloud/ad-system-spring-cloud/ad-service/ad-common/src/main/java/org/talon/ad/advice/CommonResponseDataAdvice.java
+/home/kungtalon/projects/ad-systm-spring-cloud/ad-system-spring-cloud/ad-service/ad-common/src/main/java/org/talon/ad/annotation/IgnoreResponseAdvice.java
+/home/kungtalon/projects/ad-systm-spring-cloud/ad-system-spring-cloud/ad-service/ad-common/src/main/java/org/talon/ad/advice/GlobalExceptionAdvice.java
+/home/kungtalon/projects/ad-systm-spring-cloud/ad-system-spring-cloud/ad-service/ad-common/src/main/java/org/talon/ad/vo/CommonResponse.java

@@ -1,0 +1,64 @@
+server:
+  port: 7001
+  servlet:
+    context-path: /ad-search
+
+spring:
+  application:
+    name: eureka-client-ad-search
+  jpa:  # for orm
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+    open-in-view: false     # will cause lazy loading and bugs...
+  datasource:
+    db: java_ad
+    url: jdbc:mysql://127.0.0.1:3306/java_ad?autoReconnect=true
+    username: root
+    password: ENC(36fWpnvYEvlg4YLq1u6AQEppr8iBybmmhthIV/y9djziTJ9GWsUM5r3yanmip0TE)
+    tomcat:
+      max-active: 4
+      min-idle: 2
+      initial-size: 2
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 2000ms
+    lettuce:
+      pool:
+        max-wait: 1ms
+        max-active: 4
+        max-idle: 4
+        min-idle: 0
+      shutdown-timeout: 100ms
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+adconf:
+  mysql:
+    host: localhost
+    port: 3306
+    username: root
+    password: ENC(36fWpnvYEvlg4YLq1u6AQEppr8iBybmmhthIV/y9djziTJ9GWsUM5r3yanmip0TE)
+    binlogName: ""
+    position: -1
+  kafka:
+    topic: java-ad-search
+  embedding:
+    size: 3

@@ -1,0 +1,6 @@
+org/talon/ad/advice/GlobalExceptionAdvice.class
+org/talon/ad/advice/CommonResponseDataAdvice.class
+org/talon/ad/exception/AdException.class
+org/talon/ad/annotation/IgnoreResponseAdvice.class
+org/talon/ad/conf/WebConfiguration.class
+org/talon/ad/vo/CommonResponse.class

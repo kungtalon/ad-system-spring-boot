@@ -1,0 +1,32 @@
+server:
+  port: 7000
+  servlet:
+    context-path: /ad-sponsor
+
+spring:
+  application:
+    name: eureka-client-ad-sponsor
+  jpa:  # for orm
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+    open-in-view: false     # will cause lazy loading and bugs...
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/java_ad?autoReconnect=true
+    username: root
+    password: ENC(36fWpnvYEvlg4YLq1u6AQEppr8iBybmmhthIV/y9djziTJ9GWsUM5r3yanmip0TE)
+    tomcat:
+      max-active: 4
+      min-idle: 2
+      initial-size: 2
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+logging:
+  config: classpath:logback.xml
+  file: ad-sponsor.log
