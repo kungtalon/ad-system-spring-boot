@@ -82,6 +82,14 @@ FaissServer::~FaissServer()
     {
         delete this->svr;
     }
+    if (faiss != NULL)
+    {
+        delete faiss;
+    }
+    if (redcli != NULL)
+    {
+        delete redcli;
+    }
 }
 
 void FaissServer::start_server(utils::Config &config)
