@@ -1,4 +1,4 @@
-# ad-system-spring-boot
+# Ad-System-Spring-Boot-FAISS
 An advertisement system based on spring cloud microservices and FAISS embedding search
 
 # Architecture
